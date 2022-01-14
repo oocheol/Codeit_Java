@@ -14,13 +14,14 @@ public class Variables {
         System.out.print("long ");
         System.out.println(big);
 
-        double float_num = 3.14 ;
+        double float_num = 3.14125125 ;
         System.out.print("double ");
         System.out.println(float_num);
 
         String str = "Codeit!";
         System.out.print("String ");
         System.out.println(str);
+
 
 
     }
