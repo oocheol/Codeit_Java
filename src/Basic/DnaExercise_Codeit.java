@@ -1,3 +1,5 @@
+package Basic;
+
 public class DnaExercise_Codeit {
     public static void main(String[] args) {
         String dna = "GATCCGCCCGCCTCGGCCTCCCAAAGTGCTGGGATTACAGGTGTGAGCCA"

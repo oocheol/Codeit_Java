@@ -1,3 +1,5 @@
+package Basic;
+
 public class ArrayExercise {
     public static void main(String[] args) {
         // 여기에 코드를 작성하세요.

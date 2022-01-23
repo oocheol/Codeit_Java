@@ -1,4 +1,4 @@
-package test1;
+package Bank_2;
 
 public class Person {
     private String name;
@@ -40,7 +40,7 @@ public class Person {
         return account;
     }
 
-    // 첫 번째 파라미터 : 받는 사람(Person)
+    // 첫 번째 파라미터 : 받는 사람(BankBasic.Person)
     // 두 번째 파라미터 : 이체할 금액(정수)
     // 리턴 : 성공여부(불린)
     public boolean transfer(Person to, int amount) {
@@ -55,7 +55,7 @@ public class Person {
         }
     }
 
-    // 첫 번째 파라미터: 받는 사람의 계정 (BankAccount)
+    // 첫 번째 파라미터: 받는 사람의 계정 (BankBasic.BankAccount)
     // 두 번째 파라미터: 이체할 금액 (정수)
     // 리턴 : 성공여부 (불린)
     public boolean transfer(BankAccount to, int amount) {

@@ -1,3 +1,5 @@
+package Basic;
+
 public class OperatorExercise {
     public static void main(String[] args) {
         // 각 과목 점수

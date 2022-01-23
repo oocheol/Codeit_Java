@@ -1,3 +1,5 @@
+package Basic;
+
 public class WhileExercise {
     public static void main(String[] args){
         int num = 10000;

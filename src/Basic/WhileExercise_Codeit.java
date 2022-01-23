@@ -1,3 +1,5 @@
+package Basic;
+
 public class WhileExercise_Codeit {
     public static void main(String[] args){
         int num = 10000;

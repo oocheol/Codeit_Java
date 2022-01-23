@@ -1,3 +1,5 @@
+package Basic;
+
 public class Variables_Exercise {
     public static void main(String[] args){
                 // 변수 정의 (자료형 잘 선정해서)
