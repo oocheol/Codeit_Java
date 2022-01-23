@@ -13,8 +13,7 @@ public class GreatestDifferenceFinder {
                     result[j] = intArray[i] - intArray[i+1];
                     result[j+1] = intArray[i+1] - intArray[i];
                 }
-
-            }
+        }
             return result[0];
         }
 
