@@ -6,15 +6,19 @@ public class GreatestDifferenceFinder {
             return 0;
         }
         else{
-            int[] result = new int[(intArray.length * (intArray.length-1))];
-            int max ;
-            for (int i = 0; i < intArray.length -1; i++){
-                for (int j = 0; j < result.length -1; j+=2){
-                    result[j] = intArray[i] - intArray[i+1];
-                    result[j+1] = intArray[i+1] - intArray[i];
+            int max = intArray[0] ;
+            int min = intArray[0] ;
+            for (int i = 0 ; i < intArray.length ; i++){
+                if (intArray[i] > max){
+                    max = intArray[i];
                 }
+                if (intArray[i] < min){
+                    min = intArray[i];
+                }
+
         }
-            return result[0];
+            return max - min;
+
         }
 
     }
