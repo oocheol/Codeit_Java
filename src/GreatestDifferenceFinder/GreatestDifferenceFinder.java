@@ -15,11 +15,9 @@ public class GreatestDifferenceFinder {
                 if (intArray[i] < min){
                     min = intArray[i];
                 }
-
         }
             return max - min;
 
         }
-
     }
 }
