@@ -4,8 +4,8 @@ public class BankAccount {
     private int balance;
     private Person owner ;
 
-    public void setBalance(int pBalance){
-        balance = pBalance;
+    public void setBalance(int balance){
+        this.balance = balance;
     }
 
     public int getBalance(){
@@ -13,8 +13,8 @@ public class BankAccount {
         return balance;
     }
 
-    public void setOwner(Person pOnwer){
-        owner = pOnwer;
+    public void setOwner(Person owner){
+        this.owner = owner;
     }
 
     public Person getOwner(){
@@ -52,22 +52,24 @@ public class BankAccount {
         }
     }
 
-    public BankAccount(int pBalance) {
-        setBalance(pBalance);
-        if (pBalance < 0){
-            setBalance(0);
+    public BankAccount(int balance) {
+        this.balance = balance;
+        if (balance < 0){
+            this.balance = 0;
         }
     }
-    public BankAccount(Person pOwner) {
-        setOwner(pOwner);
-        setBalance(0);
+    public BankAccount(Person owner) {
+        this.owner = owner;
+        owner.setAccount(this);
+        this.balance = 0;
     }
 
-    public BankAccount(int pBalance, Person pOwner) {
-        setOwner(pOwner);
-        setBalance(pBalance);
-        if (pBalance < 0){
-            setBalance(0);
+    public BankAccount(int balance, Person owner) {
+        this.owner = owner;
+        this.balance = balance;
+        owner.setAccount(this);
+        if (balance < 0){
+            this.balance = 0;
         }
     }
 }
