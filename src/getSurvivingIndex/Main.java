@@ -17,11 +17,16 @@ public class Main {
         // 최후의 한명이 남는 순간까지 게임을 반복한다
         while (n >= 2) {
             for (int i = 1; i <= k - 1; i++) {
+                System.out.println("1"+ soldiers);
                 soldiers.add(soldiers.get(0));
+                System.out.println("2" + soldiers);
                 soldiers.remove(0);
+                System.out.println("3" + soldiers);
             }
             corpse_list.add(soldiers.get(0));
+            System.out.println("4" + soldiers);
             soldiers.remove(0);
+            System.out.println("5" + soldiers);
             n--;
         }
 
