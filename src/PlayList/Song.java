@@ -11,17 +11,10 @@ public class Song {
         this.albumName = albumName;
     }
 
-
-
-
     @Override
     public String toString() {
         return track+" - "+ artist+"\n"+albumName;
     }
-
-
-
-
 
 
     public String getTrack() {
